@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/HoursWorkout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#155f6f"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_weight="0.01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/setDateWorkout"
+            android:layout_width="342dp"
+            android:layout_height="23dp"
+            android:layout_centerInParent="true"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:text="Date"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.112" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_weight="0.75"
+        android:background="@drawable/layout_lightbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textvIEW33"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="Workouts"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.471"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.064" />
+
+        <TextView
+            android:id="@+id/textViewimpossible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53dp"
+            android:layout_marginBottom="36dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#ecfbfc"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_weight="1.3"
+        android:background="@drawable/layout_lightbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/firstTrain"
+            android:layout_width="148dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="235dp"
+            android:layout_marginRight="235dp"
+            android:layout_marginBottom="43dp"
+            android:background="@drawable/workoutgrey_rounded_corner"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#4f5f64"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/SecondTrain"
+            android:layout_width="148dp"
+            android:layout_height="110dp"
+            android:background="@drawable/workoutgrey_rounded_corner"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#4f5f64"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.878"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.505" />
+
+        <TextView
+            android:id="@+id/textvIEW"
+            android:layout_width="179dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="Weight Training"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/ClickTextView"
+            android:layout_width="158dp"
+            android:layout_height="18dp"
+            android:text="Tap for other workouts. >>"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.913"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.91" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="38dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="289dp"
+            android:layout_marginRight="289dp"
+            android:layout_marginBottom="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/weight" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="38dp"
+            android:layout_height="33dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.766"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.268"
+            app:srcCompat="@drawable/weight" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_weight="1.3"
+        android:background="@drawable/layout_lightbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/CardioWorkout"
+            android:layout_width="165dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/workoutgrey_rounded_corner"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#4f5f64"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="38dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="186dp"
+            android:layout_marginLeft="186dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="187dp"
+            android:layout_marginRight="187dp"
+            android:layout_marginBottom="112dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/workout_machine" />
+
+        <TextView
+            android:id="@+id/textvIEW4"
+            android:layout_width="179dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="Cardio"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_weight="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/fullweekbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/workoutgrey_rounded_corner"
+            android:backgroundTint="#d5e8e6"
+            android:fontFamily="sans-serif"
+            android:text="Show full week's Schedule"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="@drawable/layout_bg">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/HoursLeftHome"-->
+    <!--            android:layout_width="84dp"-->
+    <!--            android:layout_height="29dp"-->
+    <!--            android:layout_marginStart="8dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            android:layout_marginBottom="8dp"-->
+    <!--            android:text="TextView"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:textSize="18sp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.154"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.743" />-->
+
+    <!--        <TextView-->
+
+    <!--            android:id="@+id/textView6"-->
+    <!--            android:layout_width="92dp"-->
+    <!--            android:layout_height="31dp"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:text="Workout"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:textSize="24sp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.101" />-->
+
+    <!--        <TextView-->
+
+    <!--            android:id="@+id/textView7"-->
+    <!--            android:layout_width="92dp"-->
+    <!--            android:layout_height="31dp"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:text="Workout"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:textSize="24sp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.101" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView5"-->
+    <!--            android:layout_width="26dp"-->
+    <!--            android:layout_height="33dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.698"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.804"-->
+    <!--            app:srcCompat="@drawable/black_circle" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView7"-->
+    <!--            android:layout_width="26dp"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_marginStart="8dp"-->
+    <!--            android:layout_marginTop="76dp"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            android:layout_marginBottom="8dp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.707"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.303"-->
+    <!--            app:srcCompat="@drawable/whitecircle" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView4"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="8dp"-->
+    <!--            android:layout_marginLeft="8dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:layout_marginBottom="8dp"-->
+    <!--            android:text="Time Left"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.848"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.609" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView5"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="8dp"-->
+    <!--            android:layout_marginLeft="8dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:text="Time Passed"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.905"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.771" />-->
+
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1.5"-->
+    <!--        android:background="@drawable/layout_bg">-->
+
+    <!--        <TextView-->
+
+    <!--            android:id="@+id/textView8"-->
+    <!--            android:layout_width="81dp"-->
+    <!--            android:layout_height="32dp"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:text="Calorie"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            android:textSize="24sp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.501"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.029" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/TargetCalories"-->
+    <!--            android:layout_width="128dp"-->
+    <!--            android:layout_height="147dp"-->
+    <!--            android:layout_marginStart="8dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            android:layout_marginBottom="8dp"-->
+    <!--            android:background="@drawable/green_rounded_corner"-->
+    <!--            android:gravity="center_vertical"-->
+    <!--            android:text="TextView"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.096"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.337" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/CompletedCalories"-->
+    <!--            android:layout_width="128dp"-->
+    <!--            android:layout_height="147dp"-->
+    <!--            android:layout_marginStart="8dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            android:layout_marginBottom="8dp"-->
+    <!--            android:background="@drawable/green_rounded_corner"-->
+    <!--            android:gravity="center_vertical"-->
+    <!--            android:text="TextView"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.907"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.314" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView12"-->
+    <!--            android:layout_width="98dp"-->
+    <!--            android:layout_height="28dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Target"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/textView11"-->
+    <!--            app:layout_constraintHorizontal_bias="0.273"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.208" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/textView11"-->
+    <!--            android:layout_width="98dp"-->
+    <!--            android:layout_height="28dp"-->
+    <!--            android:layout_marginStart="244dp"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            android:layout_marginRight="8dp"-->
+    <!--            android:layout_marginLeft="244dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Completed"-->
+    <!--            android:textColor="#ffffff"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.36"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.198" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/mealsLeft"-->
+    <!--            android:layout_width="66dp"-->
+    <!--            android:layout_height="33dp"-->
+    <!--            android:layout_marginStart="8dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            android:layout_marginBottom="8dp"-->
+    <!--            android:background="@drawable/rounded_corner"-->
+    <!--            android:gravity="center_vertical"-->
+    <!--            android:text="TextView"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.161"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.579" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/mealsCompleted"-->
+    <!--            android:layout_width="66dp"-->
+    <!--            android:layout_height="33dp"-->
+    <!--            android:layout_marginStart="8dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:layout_marginEnd="8dp"-->
+    <!--            android:layout_marginBottom="8dp"-->
+    <!--            android:background="@drawable/rounded_corner"-->
+    <!--            android:gravity="center_vertical"-->
+    <!--            android:text="TextView"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintHorizontal_bias="0.832"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.579" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+</LinearLayout>

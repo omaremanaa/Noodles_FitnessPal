@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Project_FitnessPal</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <!--FAQ Expandable ListView-->
+    </string-array>
+    <string name="hyperlink"><a href="">Click Here</a></string>
+    <string name="q1">Why Use Fitness Pal?</string>
+    <string name="q2">Privacy</string>
+    <string name="q3">Terms and Conditions</string>
+    <string name="q4">About Noodles</string>
+    <string-array name="q1">
+        <item>Fitness Pal, with multiple health monitoring areas, helps fitness enthusiasts track, monitor, alter and fulfill fitness practices and goals to achieve their desired health benefits.</item>
+    </string-array>
+    <string-array name="q2">
+        <item>The Company takes reasonable steps to protect your personal information, however, you accept that no digital data source can be guaranteed to be secure from access by unintended recipients and will not hold us responsible for any breach of security should one occur.</item>
+    </string-array>
+    <string-array name="q3">
+        <item>This app is owned and operated by Noodles Group trading as Fitness Pal. Fitness Pal is an online matching, payment and booking marketplace that connects Fitness Professionals and Clients who are looking for on-demand access to Exercise Services.
+</item>
+    </string-array>
+    <string-array name="q4">
+        <item>Noodles are a group of 5 CS students who are creating their Group Project for MAD course.</item>
+    </string-array>
+    <!--Hyperlinks Contact-->
+    <string name="linktofacebook">
+        <a href="https://www.facebook.com/omaremanaa/">/fitnessPal</a>
+    </string>
+    <string name="linktoinsta">
+        <a href="https://www.instagram.com/omaremanaa">@fitnessPal</a>
+    </string>
+    <!--FullWeek Expandable ListView-->
+    <string name="day1">Day 1</string>
+    <string name="day2">Day 2</string>
+    <string name="day3">Day 3</string>
+    <string name="day4">Day 4</string>
+    <string name="day5">Day 5</string>
+    <!--Normal-->
+    <string-array name="day1Normal">
+        <item>12/10/8 Barbell Shrug\n12/10/8 Dumbbell Raise\n3x8 Deadlift\n12/10/8 Bent Over-Rows\n3 x until failure Pull-Ups
+        </item>
+    </string-array>
+    <string-array name="day2Normal">
+        <item>12/10/8/6 Bench Press\n12/10/10/8 Pec Flys\n12/10/8/6 Incline Bench\n12/10/10/8 Decline Dumbbell Bench Press
+        </item>
+    </string-array>
+    <string-array name="day3Normal">
+        <item>12/10/8 Barbell Squat\n12/10/8 Leg Extension\n12/10/8 Dumbbell Lunges\n12/10/8 Front Squats
+</item>
+    </string-array>
+    <string-array name="day4Normal">
+        <item>12/10/8/6 Military Press\n12/10/10/8 EZ Bar Bicep Curls\n12/10/8 Overhead Tricep Extensions\n3 x until failure Chin-Ups</item>
+    </string-array>
+    <string-array name="day5Normal">
+        <item>45 mins treadmills</item>
+    </string-array>
+    <!--Normal-->
+    <!--Underweight-->
+    <string-array name="day1Underweight">
+        <item>5 x 8 Barbell Shrug\n5 x 8 Dumbbell Raise\n3 x 8 Deadlift\n5 x 8 Bent Over-Rows\n3 x 6 Pull-Ups
+        </item>
+    </string-array>
+    <string-array name="day2Underweight">
+        <item>5 x 6 Bench Press\n5 x 8 Pec Flys\n5 x 6 Incline Bench\n5 x 8 Decline Dumbbell Bench Press
+        </item>
+    </string-array>
+    <string-array name="day3Underweight">
+        <item>3 x 8 Barbell Squat\n5 x 8 Leg Extension\n5 x 8 Dumbbell Lunges\n3 x 8 Front Squats
+</item>
+    </string-array>
+    <string-array name="day4Underweight">
+        <item>3 x 8 Military Press\n5 x 8 EZ Bar Bicep Curls\n5 x 8 Overhead Tricep Extensions\n3 x 8 Chin-Ups</item>
+    </string-array>
+    <string-array name="day5Underweight">
+        <item>45 mins treadmills</item>
+    </string-array>
+    <!--Underweight-->
+    <!--Overweight-->
+    <string-array name="day1Overweight">
+        <item>15/12/10 Barbell Shrug\n15/12/10 Dumbbell Raise\n3 x 8 Deadlift\n15/12/10 Bent Over-Rows\n3 x until failure Pull-Ups
+        </item>
+    </string-array>
+    <string-array name="day2Overweight">
+        <item>15/12/12/10 Bench Press\n15/12/12/10 Pec Flys\n15/12/10 Incline Bench\n15/12/12/10 Decline Dumbbell Bench Press
+        </item>
+    </string-array>
+    <string-array name="day3Overweight">
+        <item>15/12/12/10 Barbell Squat\n15/12/12/10 Leg Extension\n15/12/12/10 Dumbbell Lunges\n15/12/12/10 Front Squats
+        </item>
+    </string-array>
+    <string-array name="day4Overweight">
+        <item>15/12/12/10 Military Press\n15/12/12/10 EZ Bar Bicep Curls\n15/12/12/10 Overhead Tricep Extensions\n3 x until failure Chin-Ups</item>
+    </string-array>
+    <string-array name="day5Overweight">
+        <item>45 mins treadmills</item>
+    </string-array>
+    <!--Overweight-->
+    <!--Obese-->
+    <string-array name="day1Obese">
+        <item>4x20 Barbell Shrug\n4x20 Dumbbell Raise\n4x20 Deadlift\n4x20Bent Over-Rows\n3 x until failure Pull-Ups\n
+        </item>
+    </string-array>
+    <string-array name="day2Obese">
+        <item>4x20 Bench Press\n4x20 Pec Flys\n4x20 Incline Bench\n4x20 Decline Dumbbell Bench Press
+        </item>
+    </string-array>
+    <string-array name="day3Obese">
+        <item>4x20 Barbell Squat\n4x20 Leg Extension\n4x20 Dumbbell Lunges\n4x20 Front Squats
+        </item>
+    </string-array>
+    <string-array name="day4Obese">
+        <item>4x20 Military Press\n4x20 EZ Bar Bicep Curls\n4x20 Overhead Tricep Extensions\n3 x until failure Chin-Ups</item>
+    </string-array>
+    <string-array name="day5Obese">
+        <item>45 mins treadmills</item>
+    </string-array>
+    <!--Obese-->
+
+</resources>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_weight="0.35"
+        android:background="@drawable/layout_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="191dp"
+            android:layout_height="124dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/lightgrey_rounded_corner"
+            android:gravity="center_horizontal"
+            android:text="\nYour Current BMI:"
+            android:textColor="#73818d"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/BMItype"
+            android:layout_width="191dp"
+            android:layout_height="124dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/green_rounded_corner"
+            android:gravity="center"
+            android:text="Normal"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/CurrentBMI"
+            android:layout_width="145dp"
+            android:layout_height="51dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.505" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.65"
+        android:background="@drawable/layout_lightgrey">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="351dp"
+            android:layout_height="231dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/moreradiusrounded_corner"
+            android:gravity="left"
+            android:text="\tResult:"
+            android:textColor="#73818d"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.74" />
+
+        <TextView
+
+            android:id="@+id/ThirdPart"
+            android:layout_width="308dp"
+            android:layout_height="29dp"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:text="Calculate BMI with custom attributes"
+            android:textColor="#808792"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.054" />
+
+        <EditText
+            android:id="@+id/HeightCalc"
+            android:layout_width="177dp"
+            android:layout_height="42dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Height (cm)"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@+id/CalculateButton"
+            app:layout_constraintEnd_toStartOf="@+id/WeightCalc"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ThirdPart"
+            app:layout_constraintVertical_bias="0.647" />
+
+        <EditText
+            android:id="@+id/WeightCalc"
+            android:layout_width="177dp"
+            android:layout_height="42dp"
+            android:background="@drawable/rounded_corner"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Weight (kg)"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@+id/CalculateButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toEndOf="@+id/HeightCalc"
+            app:layout_constraintTop_toBottomOf="@+id/ThirdPart"
+            app:layout_constraintVertical_bias="0.647" />
+
+        <Button
+            android:id="@+id/CalculateButton"
+            android:layout_width="176dp"
+            android:layout_height="62dp"
+            android:background="@drawable/button_rounded_corner"
+            android:backgroundTint="#155f6f"
+            android:text="Calculate"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HeightCalc" />
+
+        <Button
+            android:id="@+id/calculateButton2"
+            android:layout_width="271dp"
+            android:layout_height="58dp"
+            android:background="@drawable/button_rounded_corner"
+            android:backgroundTint="#155f6f"
+            android:text="Save attributes to profile"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView25"
+            app:layout_constraintEnd_toStartOf="@+id/textView25"
+            app:layout_constraintStart_toEndOf="@+id/textView25"
+            app:layout_constraintTop_toBottomOf="@+id/textView25"
+            app:layout_constraintVertical_bias="0.297" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="148dp"
+            android:layout_height="46dp"
+            android:background="@drawable/button_rounded_corner"
+            android:backgroundTint="#c8d8e1"
+            android:text="Clear"
+            android:textAllCaps="false"
+            android:textColor="#8e9da6"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/calculateButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TempResult"
+            app:layout_constraintVertical_bias="0.578" />
+
+        <TextView
+            android:id="@+id/TempResult"
+            android:layout_width="164dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="162dp"
+            android:layout_marginLeft="162dp"
+            android:layout_marginTop="278dp"
+            android:layout_marginEnd="177dp"
+            android:layout_marginRight="177dp"
+            android:layout_marginBottom="231dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.347"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tempResult"
+            android:layout_width="164dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="162dp"
+            android:layout_marginLeft="162dp"
+            android:layout_marginEnd="177dp"
+            android:layout_marginRight="177dp"
+            android:layout_marginBottom="231dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

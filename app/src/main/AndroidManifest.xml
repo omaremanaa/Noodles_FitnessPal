@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.noodles_fitnesspal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project_FitnessPal">
+        <activity android:name="com.example.noodles_fitnesspal.CalorieInformation"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity"/>
+        <activity
+            android:name="com.example.noodles_fitnesspal.NormalWorkoutActivity"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.ObeseWorkoutActivity"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.OverweightWorkoutActivity"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.UnderweightWorkoutActivity"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.VideoActivity"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.ChangePasswordActivity"
+            android:parentActivityName="com.example.noodles_fitnesspal.EditActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.BreakfastList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.UnderweightBreakfastList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.OverweightBreakfastList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.ObeseBreakfastList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.LunchList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.UnderweightLunchList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.OverweightLunchList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.ObeseLunchList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.DinnerList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.UnderweightDinnerList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.OverweightDinnerList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.ObeseDinnerList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.SnackList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.OverweightSnackList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.UnderweightSnackList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.ObeseSnackList"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.FullWeekWorkout"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.ForgotPassworActivity"
+            android:parentActivityName="com.example.noodles_fitnesspal.MainActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.ContactActivity"
+            android:parentActivityName="com.example.noodles_fitnesspal.faqActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.EditActivity"
+            android:parentActivityName="com.example.noodles_fitnesspal.ProfileActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.ProfileActivity"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.faqActivity"
+            android:parentActivityName="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity android:name="com.example.noodles_fitnesspal.MenuActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.LoginActivity"
+            android:parentActivityName="com.example.noodles_fitnesspal.MainActivity" />
+        <activity
+            android:name="com.example.noodles_fitnesspal.RegisterActivity"
+            android:parentActivityName="com.example.noodles_fitnesspal.MainActivity" />
+        <activity android:name="com.example.noodles_fitnesspal.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

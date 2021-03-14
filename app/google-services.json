@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "30724166571",
+    "firebase_url": "https://fitnesspal-a5d1a-default-rtdb.firebaseio.com",
+    "project_id": "fitnesspal-a5d1a",
+    "storage_bucket": "fitnesspal-a5d1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30724166571:android:b3964cd863aa9aa99a78ee",
+        "android_client_info": {
+          "package_name": "com.example.project_fitnesspal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30724166571-9qt3fv2a71sr5b3t8nqftp1gbnf1b8jl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.project_fitnesspal",
+            "certificate_hash": "33d76ab66e89ced42a6e4e4e80ce381217dcf5a4"
+          }
+        },
+        {
+          "client_id": "30724166571-nhncnueesq6kinnkrmltk94ndl4vpaa2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOhh7PTViBTLVKozSNHdBaD-_zE5r2n8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30724166571-nhncnueesq6kinnkrmltk94ndl4vpaa2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

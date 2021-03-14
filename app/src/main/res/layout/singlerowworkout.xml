@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true"
+    android:backgroundTint="@color/greenNormal">
+
+    <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_height="158dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/WorkoutText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="This is Demo Name"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/workoutTimes"
+            android:layout_width="358dp"
+            android:layout_height="72dp"
+            android:layout_below="@id/WorkoutText"
+            android:layout_marginLeft="10dp"
+            android:text="This is Course Name"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
